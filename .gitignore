@@ -1,0 +1,42 @@
+.build/
+__pycache__/
+*.py[cod]
+.DS_Store
+.idea/
+.venv/
+*.app/
+
+# Local diagnostics and credentials are never part of a source release.
+AGENTS.md
+.learnings/
+.env
+.env.*
+!.env.example
+*.log
+*.p12
+*.pfx
+*.pem
+*.key
+*.cer
+*.mobileprovision
+
+# Runtime state and host-page recovery data must stay on the user's machine.
+kimi-bridge/
+hook-context.json
+connection.json
+installation.json
+kimi.plugin.json
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.db
+*.db-*
+*.vscdb
+*.vscdb-*
+*.jsonl
+
+# Distributable archives belong in GitHub Releases, not source control.
+*.dmg
+*.pkg
+*.zip
+*.tar.gz
